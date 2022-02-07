@@ -15,24 +15,23 @@ import javax.validation.Valid;
 @RequestMapping("/user")
 public class UserController {
     final UserService service;
-    final IUserMapper mapper;
 
-    public UserController(UserService service, IUserMapper mapper) {
+
+    public UserController(UserService service) {
         this.service = service;
-        this.mapper = mapper;
     }
 
     @PostMapping("/doLogin")
     @Operation(summary = "Kullanıcı girişi için kullanılacak metod")
     public ResponseEntity<?> doLogin(@RequestBody @Valid DoLoginRequestDto user){
 
-        return ResponseEntity.ok().body(service.loginUsernameAndPassword(mapper.toUser(user)));
+        return ResponseEntity.ok().body(service.loginUsernameAndPassword(user));
     }
 
     @PostMapping("/doSignUp")
     public ResponseEntity<?> doSignUp(@RequestBody @Valid DoSignUpRequestDto user){
         // 1. Etapta -> auth için kayıt olmalı
-        service.saveReturnUser(mapper.toUser(user));
+        service.saveReturnUser(user);
 
         // 2. Etapta-> User-service e kayıt için istek atmalı, dönen cevaba göre işlem yapılmalı
         return ResponseEntity.ok().body("Saved");

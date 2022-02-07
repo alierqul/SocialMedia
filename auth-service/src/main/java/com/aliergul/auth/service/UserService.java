@@ -1,6 +1,9 @@
 package com.aliergul.auth.service;
 
 import com.aliergul.auth.dto.request.DoLoginRequestDto;
+import com.aliergul.auth.dto.request.DoSignUpRequestDto;
+import com.aliergul.auth.dto.response.DoLoginResponseDto;
+import com.aliergul.auth.mapper.IUserMapper;
 import com.aliergul.auth.repository.IUserRepository;
 import com.aliergul.auth.repository.entity.User;
 import org.springframework.stereotype.Service;
@@ -10,11 +13,12 @@ import java.util.Optional;
 
 @Service
 public class UserService {
-    final
-    IUserRepository iUserRepository;
+    final IUserRepository iUserRepository;
+    final IUserMapper mapper;
 
-    public UserService(IUserRepository iUserRepository) {
+    public UserService(IUserRepository iUserRepository,IUserMapper mapper) {
         this.iUserRepository = iUserRepository;
+        this.mapper=mapper;
     }
 
     /**
@@ -22,8 +26,8 @@ public class UserService {
      * @param user
      * @return
      */
-    public User saveReturnUser(User user){
-        return iUserRepository.save(user);
+    public User saveReturnUser(DoSignUpRequestDto user){
+        return iUserRepository.save(mapper.toUser(user));
     }
 
     public User update(User user){
@@ -38,12 +42,12 @@ public class UserService {
         return iUserRepository.findAll();
     }
 
-    public User loginUsernameAndPassword(User dto){
+    public DoLoginResponseDto loginUsernameAndPassword(DoLoginRequestDto dto){
         Optional<User> inDB=iUserRepository.findByUsernameAndPassword(dto.getUsername(),dto.getPassword());
         if(!inDB.isPresent()){
             throw new IllegalArgumentException("Email ya da şifre hatalı");
         }
-        return inDB.get();
+        return mapper.toLoginResponse(inDB.get());
     }
 
     public User findUsername(String username){

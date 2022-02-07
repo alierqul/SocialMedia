@@ -2,6 +2,7 @@ package com.aliergul.auth.mapper;
 
 import com.aliergul.auth.dto.request.DoLoginRequestDto;
 import com.aliergul.auth.dto.request.DoSignUpRequestDto;
+import com.aliergul.auth.dto.response.DoLoginResponseDto;
 import com.aliergul.auth.repository.entity.User;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
@@ -21,6 +22,7 @@ public interface IUserMapper {
      */
     //@Mapping(source ="email",target="username")
 
-    User toUser(final DoLoginRequestDto dto);
     User toUser(final DoSignUpRequestDto dto);
+
+    DoLoginResponseDto toLoginResponse(final User dto);
 }
