@@ -1,10 +1,11 @@
 server:
   port: 8090
+
 spring:
   data:
     mongodb:
       database: socialmedia
-      username: bilgeadam
-      password: 'admin'
-      host: localhost
-      port: 27000
+      username: socialmedia-user
+      password: 'SocialMedia!**'
+      host: 34.118.43.9
+      port: 27017

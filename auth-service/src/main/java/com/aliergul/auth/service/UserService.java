@@ -3,6 +3,7 @@ package com.aliergul.auth.service;
 import com.aliergul.auth.dto.request.DoLoginRequestDto;
 import com.aliergul.auth.dto.request.DoSignUpRequestDto;
 import com.aliergul.auth.dto.response.DoLoginResponseDto;
+import com.aliergul.auth.manager.ProfileManager;
 import com.aliergul.auth.mapper.IUserMapper;
 import com.aliergul.auth.repository.IUserRepository;
 import com.aliergul.auth.repository.entity.User;
@@ -15,10 +16,12 @@ import java.util.Optional;
 public class UserService {
     final IUserRepository iUserRepository;
     final IUserMapper mapper;
+    final ProfileManager profileManager;
 
-    public UserService(IUserRepository iUserRepository,IUserMapper mapper) {
+    public UserService(IUserRepository iUserRepository, IUserMapper mapper, ProfileManager profileManager) {
         this.iUserRepository = iUserRepository;
         this.mapper=mapper;
+        this.profileManager = profileManager;
     }
 
     /**
@@ -42,20 +45,29 @@ public class UserService {
         return iUserRepository.findAll();
     }
 
-    public DoLoginResponseDto loginUsernameAndPassword(DoLoginRequestDto dto){
-        Optional<User> inDB=iUserRepository.findByUsernameAndPassword(dto.getUsername(),dto.getPassword());
-        if(!inDB.isPresent()){
-            throw new IllegalArgumentException("Email ya da şifre hatalı");
-        }
-        return mapper.toLoginResponse(inDB.get());
-    }
+
 
     public User findUsername(String username){
         Optional<User> inDB=iUserRepository.findByUsername(username);
         if(!inDB.isPresent()){
             throw new IllegalArgumentException("Email Bulunamadı");
         }
+
         return inDB.get();
+    }
+
+    public DoLoginResponseDto loginUsernameAndPassword(DoLoginRequestDto dto){
+        Optional<User> inDB=iUserRepository.findByUsernameAndPassword(dto.getUsername(),dto.getPassword());
+        if(!inDB.isPresent()){
+            return DoLoginResponseDto.builder().error(410).build();
+        }
+        String profilID=profileManager.findByAuthId(inDB.get().getId()).getBody();
+        if(profilID==null || profilID.isEmpty()){
+            return DoLoginResponseDto.builder().error(500).build();
+        }else{
+            return DoLoginResponseDto.builder().status(inDB.get().getStatus()).id(profilID).build();
+        }
+
     }
 
 }

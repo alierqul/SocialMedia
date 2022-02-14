@@ -6,9 +6,11 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @ToString
 
 public class DoLoginResponseDto {
-    long id;
+    String id;
     int status;
+    int error;
 }

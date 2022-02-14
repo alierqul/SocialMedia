@@ -1,10 +1,12 @@
 ext{
     versions = [
             springBoot              : "2.6.3",
+            springCloud             : "3.1.0",
             postgresql              : "42.3.2",
             lombok                  : "1.18.22",
-            springdoc               : "1.6.5",
-            mapstruct               : "1.4.2.Final"
+            openapi                 : "1.6.5",
+            mapstruct               : "1.4.2.Final",
+            aws                     : "1.12.156"
     ]
 
     libs = [
@@ -12,14 +14,19 @@ ext{
             springDataJpa         : "org.springframework.boot:spring-boot-starter-data-jpa:$versions.springBoot",
             springDataMongoDb     : "org.springframework.boot:spring-boot-starter-data-mongodb:$versions.springBoot",
             springValidation      : "org.springframework.boot:spring-boot-starter-validation:$versions.springBoot",
+            springOpenFeign       : "org.springframework.cloud:spring-cloud-starter-openfeign:$versions.springCloud",
+            thymeleaf             : "org.springframework.boot:spring-boot-starter-thymeleaf:$versions.springBoot",
+
             postgresql            : "org.postgresql:postgresql:$versions.postgresql",
+
             lombok                : "org.projectlombok:lombok:$versions.lombok",
 
             mapstruct             : "org.mapstruct:mapstruct:$versions.mapstruct",
             mapstructprocessor    : "org.mapstruct:mapstruct-processor:$versions.mapstruct",
 
-
-            springdoc             : "org.springdoc:springdoc-openapi-ui:$versions.springdoc"
+            awsS3                 : "com.amazonaws:aws-java-sdk-s3:$versions.aws",
+            awsCloudFront         : "com.amazonaws:aws-java-sdk-cloudfront:$versions.aws",
+            openapi               : "org.springdoc:springdoc-openapi-ui:$versions.openapi"
 
     ]
 }

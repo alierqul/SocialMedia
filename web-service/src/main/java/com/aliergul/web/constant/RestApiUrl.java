@@ -1,4 +1,4 @@
-package com.aliergul.profile.constant;
+package com.aliergul.web.constant;
 
 public class RestApiUrl {
     /**
@@ -10,6 +10,7 @@ public class RestApiUrl {
      * CONTOLLER kısımlarında ki map listesini ayrıca burada yazalım
      */
     public static final String PROFILE = "/profile";
+    public static final String USER = "/user";
 
 
     /**
@@ -26,6 +27,6 @@ public class RestApiUrl {
     /**
      * CONTROLLER için özel olarak tanımladığınız istek url lerini burada tanımlayalım ayrıştırabilirsiniz.
      */
-
-    public static final String FIND_BY_AUTH_ID= "/findbyauthid";
+    public static final String DOLOGIN="/dologin";
+    public static final String DOSIGNUP="/signup";
 }

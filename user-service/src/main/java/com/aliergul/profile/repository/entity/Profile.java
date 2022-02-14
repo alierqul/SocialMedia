@@ -18,6 +18,7 @@ public class Profile {
     @Id
     String id;
     long authid;
+    String token;
     String firstname;
     String lastname;
     String email;

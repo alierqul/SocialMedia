@@ -15,8 +15,8 @@ import java.util.Optional;
 public class ProfileService {
     private final IProfileRepository repository;
     private final ProfileMapper mapper;
-    public void save(ProfileRequestDto profile){
-        repository.save(mapper.toProfile(profile));
+    public Profile save(ProfileRequestDto profile){
+        return repository.save(mapper.toProfile(profile));
     }
 
     public void update(Profile profile){

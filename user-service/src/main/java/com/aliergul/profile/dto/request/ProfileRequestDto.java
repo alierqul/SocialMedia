@@ -16,6 +16,7 @@ import java.util.List;
 @Builder
 public class ProfileRequestDto {
     long authid;
+    String token;
     String firstname;
     String lastname;
     String email;

@@ -3,9 +3,9 @@ server:
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: 'jdbc:postgresql://localhost:6666/authDb'
+    url: 'jdbc:postgresql://34.118.40.176:5432/authDb'
     username: postgres
-    password: root
+    password: 'Alierqul!-*'
     oracleucp:
       s-q-l-for-validate-connection:
   jpa:
@@ -15,4 +15,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+myapplication:
+  userservice: 192.168.1.107:8090
+
 
