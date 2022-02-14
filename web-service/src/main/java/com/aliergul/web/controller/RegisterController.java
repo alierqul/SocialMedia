@@ -59,7 +59,7 @@ public class RegisterController {
                         .firstname(firstname)
                         .country(country)
                         .city(city)
-                        .build()).getBody();
+                        .build());
         try{
 
            String imageURL= s3ManagerService.putObject(profileId+".png",image);

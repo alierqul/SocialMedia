@@ -3,6 +3,7 @@ import static com.aliergul.auth.constant.RestApiUrl.*;
 import com.aliergul.auth.dto.request.DoLoginRequestDto;
 import com.aliergul.auth.dto.request.DoSignUpRequestDto;
 import com.aliergul.auth.dto.request.ProfileRequestDto;
+import com.aliergul.auth.dto.response.DoLoginResponseDto;
 import com.aliergul.auth.manager.ProfileManager;
 import com.aliergul.auth.repository.entity.User;
 import com.aliergul.auth.service.UserService;
@@ -25,19 +26,16 @@ public class UserController {
 
 
 
-    @GetMapping("/hello")
-    public ResponseEntity<String> hello(){
-        return ResponseEntity.ok().body("Merhaba Dünya- Auth Service");
-    }
+
     @PostMapping(DOLOGIN)
     @Operation(summary = "Kullanıcı girişi için kullanılacak metod")
-    public ResponseEntity<?> doLogin(@RequestBody @Valid DoLoginRequestDto user){
-
-        return ResponseEntity.ok().body(service.loginUsernameAndPassword(user));
+    public DoLoginResponseDto doLogin(@RequestBody @Valid DoLoginRequestDto user){
+        log.info("İstek Geldi : \n:" +  user);
+        return service.loginUsernameAndPassword(user);
     }
 
     @PostMapping(DOSIGNUP)
-    public ResponseEntity<String> doSignUp(@RequestBody @Valid DoSignUpRequestDto user){
+    public String doSignUp(@RequestBody @Valid DoSignUpRequestDto user){
         log.info("İstek Geldi : \n:" +  user);
         // 1. Etapta -> auth için kayıt olmalı
         User inDB=service.saveReturnUser(user);
@@ -53,7 +51,7 @@ public class UserController {
                         .gender(user.getGender())
                 .build()).getBody();
         log.info("MongoDB kaydedildi." );
-        return ResponseEntity.ok().body(profileId);
+        return profileId;
     }
 
     @GetMapping(FINDALL)

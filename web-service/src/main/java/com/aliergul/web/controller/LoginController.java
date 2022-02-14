@@ -1,6 +1,7 @@
 package com.aliergul.web.controller;
 
 import com.aliergul.web.dto.request.DoLoginDto;
+import com.aliergul.web.dto.response.DoLoginResponseDto;
 import com.aliergul.web.service.LoginService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -49,12 +50,18 @@ public class LoginController {
 
     @PostMapping("/login")
     Object doLogin(@Valid DoLoginDto dto){
-        if(service.Login(dto.getEmail(),dto.getPassword())) {
+        DoLoginResponseDto responseDto=service.Login(dto);
+        ModelAndView modelAndView=new ModelAndView();
+        modelAndView.setViewName("login");
+        if(responseDto.getStatus()==200) {
             return "redirect:/";
-        }else{
-            ModelAndView modelAndView=new ModelAndView();
-            modelAndView.setViewName("login");
+        }else if(responseDto.getStatus()==410){
+
             modelAndView.addObject("apiError","Lütfen Bilgilerinizi Kontrol ediniz.");
+            return modelAndView;
+        }else{
+
+            modelAndView.addObject("apiError","Beklenmeyen Bir hata !");
             return modelAndView;
         }
 

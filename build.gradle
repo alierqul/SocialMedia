@@ -38,10 +38,12 @@ allprojects {
         implementation  libs.springValidation
         implementation  libs.openapi
         implementation  libs.springOpenFeign
+        implementation  libs.springSecurity
 
         implementation  libs.mapstruct
         implementation  libs.mapstructprocessor
         implementation  libs.lombok
+
 
         annotationProcessor libs.lombok
         annotationProcessor libs.mapstructprocessor

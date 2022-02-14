@@ -1,10 +1,12 @@
 package com.aliergul.profile.controller;
 
+import com.aliergul.profile.dto.request.FindByAutIdDto;
 import com.aliergul.profile.dto.request.ProfileRequestDto;
 import static com.aliergul.profile.constant.RestApiUrl.*;
 import com.aliergul.profile.repository.entity.Profile;
 import com.aliergul.profile.service.ProfileService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +17,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping(VERSION+PROFILE)
 @RequiredArgsConstructor
+@Slf4j
 public class ProfileController {
     private final ProfileService service;
 
@@ -28,12 +31,15 @@ public class ProfileController {
         return ResponseEntity.ok().body(profileId);
     }
     @PostMapping(FIND_BY_AUTH_ID)
-    public ResponseEntity<String> findByAuthId(long id){
-        Optional<Profile> profile = service.findByAuth(id);
+    String findByAuthId(@RequestBody FindByAutIdDto auth){
+        log.info("İstek Geldi : \nid: " +  auth);
+        Optional<Profile> profile = service.findByAuth(auth.getAuthid());
         if(profile.isPresent()){
-            return ResponseEntity.ok(profile.get().getId());
+            log.info("İstek Geldi : \nprofile: " +  profile.get());
+            return profile.get().getId();
         }else{
-            return ResponseEntity.ok("");
+            log.info("Sayfa bulunamadı: 500 ");
+            return "500";
         }
     }
 

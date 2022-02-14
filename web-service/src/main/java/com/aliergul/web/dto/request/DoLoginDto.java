@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 public class DoLoginDto {
     @NotNull
     @Email
-    String email;
+    String username;
     @NotNull
     @Size(min = 8,max = 32)
     String password;

@@ -1,6 +1,7 @@
 package com.aliergul.auth.manager;
 import static com.aliergul.auth.constant.RestApiUrl.*;
 
+import com.aliergul.auth.dto.request.FindByAutIdDto;
 import com.aliergul.auth.dto.request.ProfileRequestDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,6 @@ public interface ProfileManager {
     ResponseEntity<String> save(@RequestBody @Valid ProfileRequestDto dto);
 
     @PostMapping(FIND_BY_AUTH_ID)
-    ResponseEntity<String> findByAuthId(long id);
+    String findByAuthId(@RequestBody FindByAutIdDto id);
 
 }

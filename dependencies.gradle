@@ -16,6 +16,7 @@ ext{
             springValidation      : "org.springframework.boot:spring-boot-starter-validation:$versions.springBoot",
             springOpenFeign       : "org.springframework.cloud:spring-cloud-starter-openfeign:$versions.springCloud",
             thymeleaf             : "org.springframework.boot:spring-boot-starter-thymeleaf:$versions.springBoot",
+            springSecurity        : "org.springframework.boot:spring-boot-starter-security:$versions.springBoot",
 
             postgresql            : "org.postgresql:postgresql:$versions.postgresql",
 

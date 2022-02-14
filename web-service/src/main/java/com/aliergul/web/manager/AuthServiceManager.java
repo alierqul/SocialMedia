@@ -1,7 +1,10 @@
 package com.aliergul.web.manager;
 
 import static com.aliergul.web.constant.RestApiUrl.*;
+
+import com.aliergul.web.dto.request.DoLoginDto;
 import com.aliergul.web.dto.request.DoSignUpRequestDto;
+import com.aliergul.web.dto.response.DoLoginResponseDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,5 +17,7 @@ public interface AuthServiceManager {
 
 
     @PostMapping(DOSIGNUP)
-    ResponseEntity<String> doSignUp(@RequestBody @Valid DoSignUpRequestDto user);
+    String doSignUp(@RequestBody @Valid DoSignUpRequestDto user);
+    @PostMapping(DOLOGIN)
+    DoLoginResponseDto doLogin(@RequestBody @Valid DoLoginDto user);
 }

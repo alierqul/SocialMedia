@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * Spring Cloud Feign aktivasyon
  */
-
+@EnableFeignClients
 public class UserServiceSpring {
 
     public static void main(String[] args) {
