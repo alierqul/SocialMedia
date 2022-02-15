@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/services
+  security:
+    user:
+      name: admin
+      password: ${DEVELOPER_KEY}
+zipkin:
+  enabled: true
+  base-url: http://34.118.1.180:9411/
+  service-name: service-config

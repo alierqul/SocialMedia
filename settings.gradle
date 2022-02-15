@@ -1,5 +1,7 @@
 rootProject.name = 'SocialMedia'
-include 'user-service'
-include 'auth-service'
-include 'web-service'
+include 'service-user'
+include 'service-auth'
+include 'service-web'
+include 'service-config'
+include 'service-api-gateway'
 

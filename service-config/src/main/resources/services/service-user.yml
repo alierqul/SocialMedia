@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+spring:
+  data:
+    mongodb:
+      database: socialmedia
+      username: socialmedia-user
+      password: ${DEVELOPER_KEY}
+      host: 34.118.43.9
+      port: 27017
+  zipkin:
+    enabled: true
+    base-url: http://34.118.1.180:9411/
+    service-name: service-user
