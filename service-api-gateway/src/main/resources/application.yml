@@ -30,3 +30,44 @@ spring:
               args:
                 enabled: true
                 fallbackUri: forward:/fallback
+        - id: service-user-follow
+          uri:
+            http://192.168.1.107:8090
+          predicates:
+              - Path=/v1/follow/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                enabled: true
+                fallbackUri: forward:/fallback
+        - id: service-user-post
+          uri:
+            http://192.168.1.107:8090
+          predicates:
+              - Path=/v1/post/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                enabled: true
+                fallbackUri: forward:/fallback
+        - id: uservice-user-user
+          uri:
+            http://192.168.1.107:8090
+          predicates:
+              - Path=/v1/user/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                enabled: true
+                fallbackUri: forward:/fallback
+        - id: uservice-web
+          uri:
+            http://192.168.1.107:80
+          predicates:
+              - Path=/web/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                enabled: true
+                fallbackUri: forward:/fallback
+            - RewritePath=/web/?(?<segment>.*), /$\{segment}

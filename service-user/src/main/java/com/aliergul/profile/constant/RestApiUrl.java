@@ -10,6 +10,9 @@ public class RestApiUrl {
      * CONTOLLER kısımlarında ki map listesini ayrıca burada yazalım
      */
     public static final String PROFILE = "/profile";
+    public static final String USER = "/user";
+    public static final String FOLLOW = "/follow";
+    public static final String POST = "/post";
 
 
     /**
