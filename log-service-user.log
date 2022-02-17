@@ -3468,3 +3468,8 @@ Caused by: java.lang.ClassNotFoundException: MyNotification
 2022-02-16 18:00:39.345  INFO [service-user,,] 7568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9667 ms
 2022-02-16 18:00:50.975  INFO [service-user,,] 7568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
 2022-02-16 18:00:54.904  WARN [service-user,311cb1de15928e1d,83ac3db69f4f5b7b] 7568 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] c.a.p.r.consumer.UserServiceConsumer     : Bildirim geldi....: MyNotification(message=gfhfhj, sender=null, receiver=null, createAt=0, notificationId=null)
+2022-02-17 14:17:02.002  INFO [service-user,,] 1492 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-17 14:17:02.012  INFO [service-user,,] 1492 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-user, profiles=[default], label=null, version=null, state=null
+2022-02-17 14:17:14.786  INFO [service-user,,] 1492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-02-17 14:17:15.942  INFO [service-user,,] 1492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13922 ms
+2022-02-17 14:17:29.856  INFO [service-user,,] 1492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''

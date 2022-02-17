@@ -1,10 +1,12 @@
 spring:
+  application:
+    name: service-elasticsearch
   cloud:
     config:
       username: admin
       password: ${DEVELOPER_KEY}
       uri: "http://192.168.1.107:8888"
   config:
-    import: 'configserver:'
-  application:
-    name: service-service-elasticsearch
+    import: "configserver:"
+
+

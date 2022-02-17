@@ -5,12 +5,14 @@ spring:
   rabbitmq:
     host: 34.118.55.146
     port: 5672
-    username: serviceauth
+    username: service-elasticsearch
     password: ${DEVELOPER_KEY}
+  elasticsearch:
+    uris: http://34.118.33.14:9200
   zipkin:
     enabled: true
     base-url: http://34.118.1.180:9411/
-    service-name: service-elasticsearch
+    service-name: ervice-elasticsearch
 logging:
   level:
     root: warn

@@ -1,5 +1,7 @@
 package com.aliergul.socialmedia.controller;
 
+import com.aliergul.socialmedia.rabbitmq.model.ProfileNotification;
+import com.aliergul.socialmedia.rabbitmq.producer.ElasticProfileProducer;
 import com.aliergul.socialmedia.service.ProfileService;
 import com.aliergul.socialmedia.dto.request.FindByAutIdDto;
 import com.aliergul.socialmedia.dto.request.ProfileRequestDto;
@@ -20,25 +22,27 @@ import java.util.Optional;
 @Slf4j
 public class ProfileController {
     private final ProfileService service;
+    private final ElasticProfileProducer elasticProfileProducer;
 
-    @GetMapping("/hello")
-    public ResponseEntity<String> hello(){
-        return ResponseEntity.ok().body("Merhaba Dünya- Profile Service");
-    }
     @PostMapping(SAVE)
-    ResponseEntity<String> save(@RequestBody @Valid ProfileRequestDto dto){
-        String profileId= service.save(dto).getId();
-        return ResponseEntity.ok().body(profileId);
+    public ResponseEntity<String> save(@RequestBody @Valid ProfileRequestDto dto){
+        String id = service.save(dto).getId();
+        elasticProfileProducer.sendMessageProfileSave(ProfileNotification.builder()
+                .city(dto.getCity())
+                .country(dto.getCountry())
+                .email(dto.getEmail())
+                .firstname(dto.getFirstname())
+                .lastname(dto.getLastname())
+                .profileid(id)
+                .build());
+        return ResponseEntity.ok(id);
     }
     @PostMapping(FIND_BY_AUTH_ID)
     String findByAuthId(@RequestBody FindByAutIdDto auth){
-        log.info("İstek Geldi : \nid: " +  auth);
         Optional<Profile> profile = service.findByAuth(auth.getAuthid());
         if(profile.isPresent()){
-            log.info("İstek Geldi : \nprofile: " +  profile.get());
             return profile.get().getId();
         }else{
-            log.info("Sayfa bulunamadı: 500 ");
             return "500";
         }
     }

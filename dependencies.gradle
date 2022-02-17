@@ -7,7 +7,9 @@ ext{
             lombok                  : "1.18.22",
             openapi                 : "1.6.5",
             mapstruct               : "1.4.2.Final",
-            aws                     : "1.12.156"
+            aws                     : "1.12.156",
+            springGraphql           : "12.0.0",
+            springGraphiql          : "11.1.0"
     ]
 
     libs = [
@@ -19,6 +21,12 @@ ext{
             springSecurity        : "org.springframework.boot:spring-boot-starter-security:$versions.springBoot",
             springAmqp            : "org.springframework.boot:spring-boot-starter-amqp:$versions.springBoot",
             springElasticSearch   : "org.springframework.boot:spring-boot-starter-data-elasticsearch:$versions.springBoot",
+
+            springGraphiql        : "com.graphql-java-kickstart:graphiql-spring-boot-starter:$versions.springGraphiql",
+            springGraphql         : "com.graphql-java-kickstart:graphql-spring-boot-starter:$versions.springGraphql",
+            javaToolGraphql       : "com.graphql-java-kickstart:graphql-java-tools:$versions.springGraphql",
+
+
 
 
             springOpenFeign       : "org.springframework.cloud:spring-cloud-starter-openfeign:$versions.springCloud",
