@@ -5,6 +5,8 @@ import com.aliergul.auth.dto.request.DoSignUpRequestDto;
 import com.aliergul.auth.dto.request.ProfileRequestDto;
 import com.aliergul.auth.dto.response.DoLoginResponseDto;
 import com.aliergul.auth.manager.ProfileManager;
+import com.aliergul.auth.rabbitmq.model.MyNotification;
+import com.aliergul.auth.rabbitmq.producer.UserServiceProducer;
 import com.aliergul.auth.repository.entity.User;
 import com.aliergul.auth.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -23,10 +25,17 @@ public class UserController {
 
     private final UserService service;
     private final ProfileManager profileManager;
+    private final UserServiceProducer userServiceProducer;
 
 
-
-
+    @PostMapping("/sendmessage")
+    public ResponseEntity<Void> sendMessage(String message){
+        log.info("request mesaj= " + message);
+        userServiceProducer.sendMessage(MyNotification.builder()
+                .message(message)
+                .build());
+        return ResponseEntity.ok().build();
+    }
     @PostMapping(DOLOGIN)
     @Operation(summary = "Kullanıcı girişi için kullanılacak metod")
     public DoLoginResponseDto doLogin(@RequestBody @Valid DoLoginRequestDto user){
