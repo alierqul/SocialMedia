@@ -1,0 +1,20 @@
+server:
+  port: 7777
+
+spring:
+  rabbitmq:
+    host: 34.118.55.146
+    port: 5672
+    username: serviceauth
+    password: ${DEVELOPER_KEY}
+  zipkin:
+    enabled: true
+    base-url: http://34.118.1.180:9411/
+    service-name: service-elasticsearch
+logging:
+  level:
+    root: warn
+    org.springframework.boot: info
+    com.bilgeadam: debug
+  file:
+    name: log-service-elasticsearch.log

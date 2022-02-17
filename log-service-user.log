@@ -41,7 +41,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -104,7 +104,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -165,7 +165,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -228,7 +228,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -289,7 +289,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -352,7 +352,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -413,7 +413,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -476,7 +476,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -537,7 +537,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -600,7 +600,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -661,7 +661,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -724,7 +724,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -780,7 +780,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -843,7 +843,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -899,7 +899,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -962,7 +962,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1023,7 +1023,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1086,7 +1086,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1152,7 +1152,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1215,7 +1215,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1276,7 +1276,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1339,7 +1339,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1397,7 +1397,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1460,7 +1460,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1526,7 +1526,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1589,7 +1589,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1650,7 +1650,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1713,7 +1713,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1779,7 +1779,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1842,7 +1842,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1900,7 +1900,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -1963,7 +1963,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2024,7 +2024,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2087,7 +2087,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2646,7 +2646,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2709,7 +2709,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2770,7 +2770,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2833,7 +2833,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2894,7 +2894,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -2957,7 +2957,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -3371,7 +3371,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
@@ -3434,7 +3434,7 @@ Caused by: java.lang.IllegalStateException: Could not deserialize object type
 	at org.springframework.amqp.utils.SerializationUtils.deserialize(SerializationUtils.java:97) ~[spring-amqp-2.4.2.jar:2.4.2]
 	at org.springframework.amqp.support.converter.SimpleMessageConverter.fromMessage(SimpleMessageConverter.java:113) ~[spring-amqp-2.4.2.jar:2.4.2]
 	... 27 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.aliergul.auth.rabbitmq.model.MyNotification
+Caused by: java.lang.ClassNotFoundException: MyNotification
 	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
 	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
