@@ -1,5 +1,6 @@
 package com.aliergul.socialmedia.service;
 
+import com.aliergul.socialmedia.config.security.JwtTokenManager;
 import com.aliergul.socialmedia.dto.request.DoSignUpRequestDto;
 import com.aliergul.socialmedia.dto.response.DoLoginResponseDto;
 import com.aliergul.socialmedia.dto.request.DoLoginRequestDto;
@@ -8,6 +9,7 @@ import com.aliergul.socialmedia.manager.ProfileManager;
 import com.aliergul.socialmedia.mapper.IUserMapper;
 import com.aliergul.socialmedia.repository.IUserRepository;
 import com.aliergul.socialmedia.repository.entity.User;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -16,16 +18,14 @@ import java.util.Optional;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class UserService {
-    final IUserRepository iUserRepository;
-    final IUserMapper mapper;
-    final ProfileManager profileManager;
+    private final IUserRepository iUserRepository;
+    private final IUserMapper mapper;
+    private final ProfileManager profileManager;
+    private final JwtTokenManager jwtTokenManager;
 
-    public UserService(IUserRepository iUserRepository, IUserMapper mapper, ProfileManager profileManager) {
-        this.iUserRepository = iUserRepository;
-        this.mapper=mapper;
-        this.profileManager = profileManager;
-    }
+
 
     /**
      * Kullanıcıyı PostgreSQL database e yazar
@@ -70,8 +70,17 @@ public class UserService {
             if(profilID==null || profilID.isEmpty()){
                 return DoLoginResponseDto.builder().error(500).build();
             }else{
-                log.info("User PROFIL ID= "+profilID);
-                return DoLoginResponseDto.builder().status(200).id(profilID).build();
+                log.warn("User PROFIL ID= "+profilID);
+                Optional<String> token= jwtTokenManager.createToken(profilID);
+                DoLoginResponseDto response;
+                if(token.isPresent()){
+                    response= DoLoginResponseDto.builder().status(200).id(profilID).token(token.get()).error(200).build();
+                }else{
+                    response=  DoLoginResponseDto.builder().status(410).error(410).id(profilID).build();
+                }
+                return response;
+
+
             }
         }
 

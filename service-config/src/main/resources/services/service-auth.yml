@@ -30,4 +30,4 @@ logging:
   file:
     name: log-service-auth.log
 myapplication:
-  userservice: 192.168.1.107:8090
+  userservice: ${SERVICE_USER_HOST}

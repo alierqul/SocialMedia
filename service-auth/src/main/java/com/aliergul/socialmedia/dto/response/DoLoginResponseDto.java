@@ -11,6 +11,7 @@ import lombok.*;
 
 public class DoLoginResponseDto {
     String id;
+    String token;
     int status;
     int error;
 }

@@ -1,4 +1,5 @@
 package com.aliergul.socialmedia.controller;
+import com.aliergul.socialmedia.config.security.JwtTokenManager;
 import com.aliergul.socialmedia.dto.request.DoSignUpRequestDto;
 import com.aliergul.socialmedia.dto.response.DoLoginResponseDto;
 import com.aliergul.socialmedia.dto.request.DoLoginRequestDto;
@@ -26,6 +27,7 @@ public class UserController {
     private final UserService service;
     private final ProfileManager profileManager;
     private final UserServiceProducer userServiceProducer;
+
 
 
     @PostMapping("/sendmessage")
