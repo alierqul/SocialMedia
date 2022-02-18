@@ -4,8 +4,10 @@ package com.aliergul.socialmedia.config;
 import com.aliergul.socialmedia.dto.request.DoLoginDto;
 import com.aliergul.socialmedia.dto.response.DoLoginResponseDto;
 import com.aliergul.socialmedia.service.LoginService;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
@@ -15,15 +17,17 @@ import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.constraints.NotNull;
 import java.io.IOException;
 
 @Component
-@RequiredArgsConstructor
+@NoArgsConstructor
 @Slf4j
 public class MVCTokenFilter extends OncePerRequestFilter {
-
-    final LoginService service;
-    final UserDetailsServiceImpl userDetailService;
+    @Autowired
+    LoginService service;
+    @Autowired
+    UserDetailsServiceImpl userDetailService;
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
 

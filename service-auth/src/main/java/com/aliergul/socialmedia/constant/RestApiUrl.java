@@ -30,4 +30,5 @@ public class RestApiUrl {
     public static final String DOLOGIN="/dologin";
     public static final String DOSIGNUP="/signup";
     public static final String FIND_BY_AUTH_ID= "/findbyauthid";
+    public static final String IS_PROFILE_EXIST_BY_PROFILE_ID= "/isprofileexistbyprofileid";
 }

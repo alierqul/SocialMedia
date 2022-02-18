@@ -552,3 +552,56 @@ Using generated security password: 1e1d9ea9-e221-4e62-81c3-0211ddc5281d
 
 2022-02-18 11:10:40.341  INFO [service-auth,,] 12932 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
 2022-02-18 11:11:54.761  WARN [service-auth,c6a5ef73938e8bbe,c6a5ef73938e8bbe] 12932 --- [http-nio-8091-exec-4] c.a.socialmedia.service.UserService      : User PROFIL ID= 620f3deac7cc5716afa30a2a
+2022-02-18 11:40:13.764  INFO [service-auth,,] 6636 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 11:40:13.774  INFO [service-auth,,] 6636 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-auth, profiles=[default], label=null, version=null, state=null
+2022-02-18 11:40:21.379  WARN [service-auth,,] 6636 --- [main] o.s.c.s.a.z.ZipkinAutoConfiguration      : Check result of the [RestTemplateSender{http://34.118.1.180:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://34.118.1.180:9411/api/v2/spans": Read timed out; nested exception is java.net.SocketTimeoutException: Read timed out}]
+2022-02-18 11:40:22.870  INFO [service-auth,,] 6636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2022-02-18 11:40:23.633  INFO [service-auth,,] 6636 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9851 ms
+2022-02-18 11:40:32.193  WARN [service-auth,,] 6636 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 11:40:35.930  INFO [service-auth,,] 6636 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f4601320-c4fd-4e36-8aa8-28c30bdc1992
+
+2022-02-18 11:40:36.909  INFO [service-auth,,] 6636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2022-02-18 11:41:53.755  WARN [service-auth,df5b9af6967f1f95,df5b9af6967f1f95] 6636 --- [http-nio-8091-exec-6] c.a.socialmedia.service.UserService      : User PROFIL ID= 620f3deac7cc5716afa30a2a
+2022-02-18 12:56:21.600  INFO [service-auth,,] 13288 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 12:56:21.610  INFO [service-auth,,] 13288 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-auth, profiles=[default], label=null, version=null, state=null
+2022-02-18 12:56:28.505  INFO [service-auth,,] 13288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2022-02-18 12:56:29.665  INFO [service-auth,,] 13288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8051 ms
+2022-02-18 12:56:31.833  WARN [service-auth,,] 13288 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 12:56:48.331  INFO [service-auth,,] 13288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2022-02-18 13:02:06.109  WARN [service-auth,696768b6a430a1d4,696768b6a430a1d4] 13288 --- [http-nio-8091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [166] milliseconds.
+2022-02-18 13:07:35.010  INFO [service-auth,,] 5008 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 13:07:35.013  INFO [service-auth,,] 5008 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-auth, profiles=[default], label=null, version=null, state=null
+2022-02-18 13:07:46.199  INFO [service-auth,,] 5008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2022-02-18 13:07:47.043  INFO [service-auth,,] 5008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12027 ms
+2022-02-18 13:07:48.099  WARN [service-auth,,] 5008 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 13:08:02.486  INFO [service-auth,,] 5008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2022-02-18 13:09:08.716  WARN [service-auth,25caf72ff9a0f863,25caf72ff9a0f863] 5008 --- [http-nio-8091-exec-3] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [152] milliseconds.
+2022-02-18 13:29:51.096  INFO [service-auth,,] 8484 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 13:29:51.104  INFO [service-auth,,] 8484 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-auth, profiles=[default], label=null, version=null, state=null
+2022-02-18 13:30:00.110  INFO [service-auth,,] 8484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2022-02-18 13:30:00.926  INFO [service-auth,,] 8484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9816 ms
+2022-02-18 13:30:03.755  WARN [service-auth,,] 8484 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 13:30:21.888  INFO [service-auth,,] 8484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2022-02-18 13:31:41.963  WARN [service-auth,801a34afa3f00440,801a34afa3f00440] 8484 --- [http-nio-8091-exec-4] c.a.socialmedia.service.UserService      : User PROFIL ID= 620f3deac7cc5716afa30a2a
+2022-02-18 13:31:56.879  WARN [service-auth,b8d39226c22d4b64,b8d39226c22d4b64] 8484 --- [http-nio-8091-exec-6] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [180] milliseconds.
+2022-02-18 13:35:30.901  INFO [service-auth,,] 18960 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 13:35:30.916  INFO [service-auth,,] 18960 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-auth, profiles=[default], label=null, version=null, state=null
+2022-02-18 13:35:41.249  INFO [service-auth,,] 18960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2022-02-18 13:35:41.856  INFO [service-auth,,] 18960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10895 ms
+2022-02-18 13:35:43.253  WARN [service-auth,,] 18960 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 13:36:03.707  INFO [service-auth,,] 18960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2022-02-18 13:36:34.846  WARN [service-auth,39d771064b97b37b,39d771064b97b37b] 18960 --- [http-nio-8091-exec-1] c.a.s.config.security.JwtTokenManager    : isOK= true
+2022-02-18 13:36:34.861  WARN [service-auth,39d771064b97b37b,39d771064b97b37b] 18960 --- [http-nio-8091-exec-1] c.a.s.config.security.JwtTokenManager    : profile id= null
+2022-02-18 13:36:35.276  WARN [service-auth,39d771064b97b37b,39d771064b97b37b] 18960 --- [http-nio-8091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [223] milliseconds.
+2022-02-18 13:38:26.010  INFO [service-auth,,] 12300 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 13:38:26.017  INFO [service-auth,,] 12300 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-auth, profiles=[default], label=null, version=null, state=null
+2022-02-18 13:38:34.577  INFO [service-auth,,] 12300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+2022-02-18 13:38:35.144  INFO [service-auth,,] 12300 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9122 ms
+2022-02-18 13:38:36.358  WARN [service-auth,,] 12300 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-18 13:38:53.199  INFO [service-auth,,] 12300 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+2022-02-18 13:38:57.819  WARN [service-auth,429be00d94e5d6db,429be00d94e5d6db] 12300 --- [http-nio-8091-exec-2] c.a.s.config.security.JwtTokenManager    : isOK= true
+2022-02-18 13:38:57.829  WARN [service-auth,429be00d94e5d6db,429be00d94e5d6db] 12300 --- [http-nio-8091-exec-2] c.a.s.config.security.JwtTokenManager    : profile id= 620f3deac7cc5716afa30a2a
+2022-02-18 13:38:58.264  WARN [service-auth,429be00d94e5d6db,429be00d94e5d6db] 12300 --- [http-nio-8091-exec-2] c.a.s.config.security.JWTTokenFilter     : isOK= org.springframework.security.core.userdetails.User [Username=620f3deac7cc5716afa30a2a, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, credentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[USER]]
+2022-02-18 13:38:58.600  WARN [service-auth,429be00d94e5d6db,429be00d94e5d6db] 12300 --- [http-nio-8091-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [302] milliseconds.

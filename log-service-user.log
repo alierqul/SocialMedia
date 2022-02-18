@@ -150,3 +150,13 @@ java.net.SocketException: Connection reset
 2022-02-18 11:11:04.201  INFO [service-user,,] 1504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
 2022-02-18 11:11:04.714  INFO [service-user,,] 1504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7762 ms
 2022-02-18 11:11:16.019  INFO [service-user,,] 1504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-02-18 11:40:34.457  INFO [service-user,,] 18244 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 11:40:34.463  INFO [service-user,,] 18244 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-user, profiles=[default], label=null, version=null, state=null
+2022-02-18 11:40:38.661  INFO [service-user,,] 18244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-02-18 11:40:39.217  INFO [service-user,,] 18244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4751 ms
+2022-02-18 11:40:51.321  INFO [service-user,,] 18244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2022-02-18 13:08:01.198  INFO [service-user,,] 17404 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://192.168.1.107:8888
+2022-02-18 13:08:01.201  INFO [service-user,,] 17404 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=service-user, profiles=[default], label=null, version=null, state=null
+2022-02-18 13:08:07.064  INFO [service-user,,] 17404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2022-02-18 13:08:07.731  INFO [service-user,,] 17404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6528 ms
+2022-02-18 13:08:19.623  INFO [service-user,,] 17404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''

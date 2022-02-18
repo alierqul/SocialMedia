@@ -25,6 +25,7 @@ public class RestApiUrl {
     public static final String GETALL= "/getall";
     public static final String FINDBYID= "/findbyid";
     public static final String FINDBYNAME= "/findbyname";
+    public static final String IS_PROFILE_EXIST_BY_PROFILE_ID= "/isprofileexistbyprofileid";
 
     /**
      * CONTROLLER için özel olarak tanımladığınız istek url lerini burada tanımlayalım ayrıştırabilirsiniz.

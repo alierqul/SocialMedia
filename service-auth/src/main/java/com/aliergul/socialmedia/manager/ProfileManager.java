@@ -1,6 +1,7 @@
 package com.aliergul.socialmedia.manager;
 
 import com.aliergul.socialmedia.constant.RestApiUrl;
+import com.aliergul.socialmedia.dto.request.FindByProfileIDDto;
 import com.aliergul.socialmedia.dto.request.ProfileRequestDto;
 import com.aliergul.socialmedia.dto.request.FindByAutIdDto;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.validation.Valid;
+
+import static com.aliergul.socialmedia.constant.RestApiUrl.IS_PROFILE_EXIST_BY_PROFILE_ID;
 
 /**
  * MicroService mimrisi ile kullanılan yapılarda adresler değişebilir.
@@ -24,5 +27,8 @@ public interface ProfileManager {
 
     @PostMapping(RestApiUrl.FIND_BY_AUTH_ID)
     String findByAuthId(@RequestBody FindByAutIdDto id);
+
+    @PostMapping(IS_PROFILE_EXIST_BY_PROFILE_ID)
+    ResponseEntity<Boolean> isByProfileId(@RequestBody FindByProfileIDDto dto);
 
 }

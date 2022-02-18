@@ -38,6 +38,14 @@ public class UserController {
                 .build());
         return ResponseEntity.ok().build();
     }
+
+    @PostMapping("/validatetoken")
+    @Operation(summary = "Gelen Token i Doğrulamak için kulllanılır.")
+    public ResponseEntity<Boolean> validateToken(String token){
+
+        return ResponseEntity.ok().body(service.verifyToke(token));
+    }
+
     @PostMapping(RestApiUrl.DOLOGIN)
     @Operation(summary = "Kullanıcı girişi için kullanılacak metod")
     public DoLoginResponseDto doLogin(@RequestBody @Valid DoLoginRequestDto user){

@@ -1,5 +1,6 @@
 package com.aliergul.socialmedia.controller;
 
+import com.aliergul.socialmedia.dto.request.FindByProfileIDDto;
 import com.aliergul.socialmedia.rabbitmq.model.ProfileNotification;
 import com.aliergul.socialmedia.rabbitmq.producer.ElasticProfileProducer;
 import com.aliergul.socialmedia.service.ProfileService;
@@ -45,6 +46,10 @@ public class ProfileController {
         }else{
             return "500";
         }
+    }
+    @PostMapping(IS_PROFILE_EXIST_BY_PROFILE_ID)
+    ResponseEntity<Boolean> isByProfileId(@RequestBody FindByProfileIDDto dto){
+        return ResponseEntity.ok(service.findById(dto.getProfileID()).isPresent());
     }
 
     @GetMapping(GETALL)

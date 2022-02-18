@@ -11,6 +11,7 @@ import com.aliergul.socialmedia.repository.IUserRepository;
 import com.aliergul.socialmedia.repository.entity.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -59,6 +60,9 @@ public class UserService {
         return inDB.get();
     }
 
+    public boolean verifyToke(String token){
+        return jwtTokenManager.validateToken(token);
+    }
 
     public DoLoginResponseDto loginUsernameAndPassword(DoLoginRequestDto dto){
         Optional<User> inDB=iUserRepository.findByUsernameAndPassword(dto.getUsername(),dto.getPassword());
