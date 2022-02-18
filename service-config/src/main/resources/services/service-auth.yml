@@ -1,17 +1,17 @@
 server:
-  port: 8091
+  port: ${SERVICE_AUTH_PORT}
 
 spring:
   rabbitmq:
-    host: 34.118.55.146
-    port: 5672
-    username: serviceauth
-    password: ${DEVELOPER_KEY}
+    host: ${SOCIALMEDIA_RABBITMQ_URL}
+    port: ${SOCIALMEDIA_RABBITMQ_PORT}
+    username: ${SERVICE_AUTH_NAME}
+    password: ${SOCIALMEDIA_RABBITMQ_PASSWORD}
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: 'jdbc:postgresql://34.118.40.176:5432/authDb'
-    username: postgres
-    password: ${DEVELOPER_KEY}
+    url: ${SOCIALMEDIA_POSTGRESQL_BASE_URL}
+    username: ${SOCIALMEDIA_POSTGRESQL_USERNAME}
+    password:  ${SOCIALMEDIA_POSTGRESQL_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update
@@ -20,14 +20,14 @@ spring:
       format-sql: true
   zipkin:
     enabled: true
-    base-url: http://34.118.1.180:9411/
-    service-name: service-auth
+    base-url: ${SOCIALMEDIA_ZIPKKIN_BASE_URL}
+    service-name: ${SERVICE_AUTH_NAME}
 logging:
   level:
     root: warn
     org.springframework.boot: info
     com.bilgeadam: debug
   file:
-    name: log-service-auth.log
+    name: "log-${SERVICE_AUTH_NAME}.log"
 myapplication:
-  userservice: ${SERVICE_USER_HOST}
+  userservice: ${SOCIALMEDIA_SERVICE_USER_HOST}

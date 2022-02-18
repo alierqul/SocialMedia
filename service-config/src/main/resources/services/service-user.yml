@@ -1,27 +1,27 @@
 server:
-  port: 8090
+  port: ${SERVICE_USER_PORT}
 
 spring:
   rabbitmq:
-    host: 34.118.55.146
-    port: 5672
-    username: serviceuser
-    password: ${DEVELOPER_KEY}
+    host: ${SOCIALMEDIA_RABBITMQ_URL}
+    port: ${SOCIALMEDIA_RABBITMQ_PORT}
+    username: ${SERVICE_USER_NAME}
+    password: ${SOCIALMEDIA_RABBITMQ_PASSWORD}
   data:
     mongodb:
-      database: socialmedia
-      username: socialmedia-user
-      password: ${DEVELOPER_KEY}
-      host: 34.118.43.9
-      port: 27017
+      database: ${SOCIALMEDIA_MONGODB_BASE_DATABASENAME}
+      username: ${SOCIALMEDIA_MONGODB_USERNAME}
+      password: ${SOCIALMEDIA_MONGODB_PASSWORD}
+      host: ${SOCIALMEDIA_MONGODB_BASE_HOST}
+      port: ${SOCIALMEDIA_MONGODB_BASE_PORT}
   zipkin:
     enabled: true
-    base-url: http://34.118.1.180:9411/
-    service-name: service-user
+    base-url: ${SOCIALMEDIA_ZIPKKIN_BASE_URL}
+    service-name: ${SERVICE_USER_NAME}
 logging:
   level:
     root: warn
     org.springframework.boot: info
     com.bilgeadam: debug
   file:
-    name: log-service-user.log
+    name: "log-${SERVICE_USER_NAME}.log"

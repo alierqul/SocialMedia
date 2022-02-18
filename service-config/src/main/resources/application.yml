@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port:  ${SERVICE_CONFIG_PORT}
 
 spring:
   application:
@@ -17,12 +17,12 @@ spring:
       password: ${DEVELOPER_KEY}
   zipkin:
     enabled: true
-    base-url: http://34.118.1.180:9411/
-    service-name: service-config
+    base-url: ${SOCIALMEDIA_ZIPKKIN_BASE_URL}
+    service-name: ${SERVICE_CONFIG_NAME}
 logging:
   level:
     root: warn
     org.springframework.boot: info
     com.bilgeadam: debug
   file:
-    name: log-service-config.log
+    name: "log-${SERVICE_CONFIG_NAME}.log"

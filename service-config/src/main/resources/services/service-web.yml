@@ -1,18 +1,18 @@
 server:
-  port: 80
+  port: ${SERVICE_WEB_PORT}
 
 spring:
   zipkin:
     enabled: true
-    base-url: http://34.118.1.180:9411/
-    service-name: service-web
+    base-url: ${SOCIALMEDIA_ZIPKKIN_BASE_URL}
+    service-name: ${SERVICE_WEB_NAME}
 logging:
   level:
     root: warn
     org.springframework.boot: info
     com.bilgeadam: debug
   file:
-    name: log-service-web.log
+    name: "log-${SERVICE_WEB_NAME}.log"
 
 s3:
   accesskey: ${AWS_ACCESS_KEY}

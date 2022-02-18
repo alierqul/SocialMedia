@@ -3,9 +3,9 @@ spring:
     name: service-elasticsearch
   cloud:
     config:
-      username: admin
-      password: ${DEVELOPER_KEY}
-      uri: "http://192.168.1.107:8888"
+      username: ${SOCIALMEDIA_CONFIG_USERNAME}
+      password: ${SOCIALMEDIA_CONFIG_PASSWORD}
+      uri: ${SOCIALMEDIA_CONFIG_BASE_URL}
   config:
     import: "configserver:"
 

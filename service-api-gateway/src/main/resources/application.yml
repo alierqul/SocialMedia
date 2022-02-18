@@ -1,12 +1,12 @@
 server:
-  port: 3333
+  port: ${SERVICE_GATEWAY_PORT}
 spring:
   main:
     web-application-type: reactive
   zipkin:
     enabled: true
-    base-url: http://34.118.1.180:9411/
-    service-name: service-api-gateway
+    base-url: ${SOCIALMEDIA_ZIPKKIN_BASE_URL}
+    service-name: ${SERVICE_GATEWAY_NAME}
   application:
     name: service-api-gateway
   cloud:
