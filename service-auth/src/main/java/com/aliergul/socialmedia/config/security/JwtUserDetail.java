@@ -2,6 +2,7 @@ package com.aliergul.socialmedia.config.security;
 
 import com.aliergul.socialmedia.dto.request.FindByProfileIDDto;
 import com.aliergul.socialmedia.manager.ProfileManager;
+import com.aliergul.socialmedia.utilty.JwtEncodeDecode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,6 +19,8 @@ import java.util.List;
 public class JwtUserDetail implements UserDetailsService {
     @Autowired
     private ProfileManager profileManager;
+    @Autowired
+    private JwtEncodeDecode jwtEncodeDecode;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
@@ -25,7 +28,7 @@ public class JwtUserDetail implements UserDetailsService {
     }
 
     public UserDetails loadUserProfileId(String profileId){
-        boolean isprofile = profileManager.isByProfileId(FindByProfileIDDto.builder().profileID(profileId).build()).getBody();
+        boolean isprofile = profileManager.isByProfileId(FindByProfileIDDto.builder().profileID(jwtEncodeDecode.getDecodeUUID(profileId)).build()).getBody();
         if(isprofile){
             List<GrantedAuthority> grantedAuthorities = new ArrayList<>();
             grantedAuthorities.add(new SimpleGrantedAuthority("USER"));

@@ -9,6 +9,7 @@ import com.aliergul.socialmedia.manager.ProfileManager;
 import com.aliergul.socialmedia.mapper.IUserMapper;
 import com.aliergul.socialmedia.repository.IUserRepository;
 import com.aliergul.socialmedia.repository.entity.User;
+import com.aliergul.socialmedia.utilty.JwtEncodeDecode;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +26,7 @@ public class UserService {
     private final IUserMapper mapper;
     private final ProfileManager profileManager;
     private final JwtTokenManager jwtTokenManager;
+    private final JwtEncodeDecode jwtEncodeDecode;
 
 
 
@@ -75,6 +77,7 @@ public class UserService {
                 return DoLoginResponseDto.builder().error(500).build();
             }else{
                 log.warn("User PROFIL ID= "+profilID);
+                log.warn("User PROFIL ID= "+jwtEncodeDecode.getEncryptUUID(profilID));
                 Optional<String> token= jwtTokenManager.createToken(profilID);
                 DoLoginResponseDto response;
                 if(token.isPresent()){
