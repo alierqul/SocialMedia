@@ -1,0 +1,23 @@
+### Auth Servic
+## 1000 ile Başlar
+  # 1001: Oturum Açma Başarılı
+  # 1002: Oturum açma Başarısız
+
+  # 1902: Email ya da şifre hatalı
+  # 1903: Beklenmeyen bir hata oluştu.
+
+
+### User Service
+## 2000 ile başlar
+
+### Error Codes
+## 9000 ile başlar
+  #9001: Auth başarısız
+  #9002: User hataları
+  #9002: User hataları
+
+# Result Object{
+  # "status": "error",
+  # "code": "9001",
+  # "object": "object"
+}

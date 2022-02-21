@@ -19,8 +19,8 @@ import java.util.Base64;
 @Service
 public class JwtEncodeDecode {
 
-    private String privateurl = "D:\\Eclipse2021\\SECRET\\rsa_private.pem";
-    private String publicurl = "D:\\Eclipse2021\\SECRET\\rsa_cert.pem";
+    private String privateurl = "D:\\Eclipse2021\\SECRET\\rsa.private";
+    private String publicurl = "D:\\Eclipse2021\\SECRET\\rsa.public";
 
     public String getEncryptUUID(String uuid) {
         try {
@@ -37,17 +37,17 @@ public class JwtEncodeDecode {
             String encodedMessage = Base64.getEncoder().encodeToString(encryptedMessageBytes);
             return encodedMessage;
         } catch (NoSuchAlgorithmException exception) {
-            return null;
+            return "NoSuchAlgorithmException";
         } catch (NoSuchPaddingException exception) {
-            return null;
+            return "NoSuchPaddingException";
         } catch (InvalidKeyException exception) {
-            return null;
+            return "InvalidKeyException";
         } catch (IllegalBlockSizeException exception) {
-            return null;
+            return "IllegalBlockSizeException";
         } catch (BadPaddingException exception) {
-            return null;
+            return "BadPaddingException";
         } catch (IOException exception) {
-            return null;
+            return "IOException";
         } catch (Exception exception) {
             return null;
         }

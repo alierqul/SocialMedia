@@ -20,6 +20,7 @@ public class RestApiUrl {
     public static final String UPDATE= "/update";
     public static final String DELETE= "/delete";
     public static final String FINDALL= "/findall";
+    public static final String LOGOUT= "/logout";
     public static final String GETALL= "/getall";
     public static final String FINDBYID= "/findbyid";
     public static final String FINDBYNAME= "/findbyname";
