@@ -5,4 +5,5 @@ include 'service-web'
 include 'service-config'
 include 'service-api-gateway'
 include 'service-elasticsearch'
+include 'service-post'
 

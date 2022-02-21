@@ -1,0 +1,27 @@
+server:
+  port: ${SERVICE_POST_PORT}
+
+spring:
+  rabbitmq:
+    host: ${SOCIALMEDIA_RABBITMQ_URL}
+    port: ${SOCIALMEDIA_RABBITMQ_PORT}
+    username: ${SERVICE_POST_NAME}
+    password: ${SOCIALMEDIA_RABBITMQ_PASSWORD}
+  data:
+    mongodb:
+      database: ${SOCIALMEDIA_MONGODB_BASE_DATABASENAME}
+      username: ${SOCIALMEDIA_MONGODB_USERNAME}
+      password: ${SOCIALMEDIA_MONGODB_PASSWORD}
+      host: ${SOCIALMEDIA_MONGODB_BASE_HOST}
+      port: ${SOCIALMEDIA_MONGODB_BASE_PORT}
+  zipkin:
+    enabled: true
+    base-url: ${SOCIALMEDIA_ZIPKKIN_BASE_URL}
+    service-name: ${SERVICE_POST_NAME}
+logging:
+  level:
+    root: warn
+    org.springframework.boot: info
+    com.bilgeadam: debug
+  file:
+    name: "log-${SERVICE_POST_NAME}.log"
