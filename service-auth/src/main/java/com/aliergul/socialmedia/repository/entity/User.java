@@ -3,6 +3,7 @@ package com.aliergul.socialmedia.repository.entity;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Getter
 @Setter
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @Builder
 @Entity
 @Table(name="tbluser")
-public class User {
+public class User implements Serializable {
     @Id
     @SequenceGenerator(name = "sq_tbluser_id",sequenceName = "sq_tbluser_id",allocationSize = 1,initialValue = 1)
     @GeneratedValue(generator = "sq_tbluser_id")

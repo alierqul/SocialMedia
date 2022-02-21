@@ -23,6 +23,7 @@ public class AuthServiceSecurity  extends WebSecurityConfigurerAdapter {
                                                     ,"/swagger-ui/**"
                                                     ,"/v1/auth/dologin"
                                                     ,"/v1/auth/dosignup"
+                                                    ,"/v1/auth/redisMessage"
                                                     ,"/v1/auth/validatetoken"
                                                     ).permitAll()
         .anyRequest().authenticated()

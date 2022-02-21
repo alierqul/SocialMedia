@@ -14,6 +14,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -71,6 +72,18 @@ public class UserController {
                 .build()).getBody();
         log.info("MongoDB kaydedildi." );
         return profileId;
+    }
+
+    @GetMapping("/redisOrnek")
+    @Operation(summary = "Redis Test etmek için mesaj yazınız.")
+    public ResponseEntity<String> redisMessage(String message){
+        return ResponseEntity.ok(service.redisMessage(message));
+    }
+
+    @GetMapping(RestApiUrl.LOGOUT)
+    public ResponseEntity<?> logout(){
+        SecurityContextHolder.getContext().getAuthentication().setAuthenticated(false);
+        return ResponseEntity.ok().body("logout");
     }
 
     @GetMapping(RestApiUrl.FINDALL)

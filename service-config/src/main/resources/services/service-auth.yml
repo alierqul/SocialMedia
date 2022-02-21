@@ -2,6 +2,10 @@ server:
   port: ${SERVICE_AUTH_PORT}
 
 spring:
+  redis:
+    host: ${SOCIALMEDIA_REDIS_BASE_URL}
+    port: ${SOCIALMEDIA_REDIS_BASE_PORT}
+
   rabbitmq:
     host: ${SOCIALMEDIA_RABBITMQ_URL}
     port: ${SOCIALMEDIA_RABBITMQ_PORT}
